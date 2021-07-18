@@ -8,7 +8,7 @@
 export default {
     name:'about'
 }
-</script>
+</script>/
 
 <style>
 

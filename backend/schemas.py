@@ -1,12 +1,13 @@
+from datetime import datetime
 from typing import List, Optional
 
 from pydantic import BaseModel
 
 
 class ItemBase(BaseModel):
-    title: str
-    description: Optional[str] = None
-
+    name: str
+    qualification: Optional[str] = None
+    
 
 class ItemCreate(ItemBase):
     pass
@@ -22,6 +23,10 @@ class Item(ItemBase):
 
 class UserBase(BaseModel):
     role: str
+    location: str
+    salary: int
+   
+
 
 
 class UserCreate(UserBase):
@@ -31,25 +36,24 @@ class UserCreate(UserBase):
 class User(UserBase):
     id: int
     is_active: bool
-   ## items: List[Item] = []
+    ##items: List[Item] = []
 
     class Config:
         orm_mode = True
 
 
 class applyBase(BaseModel):
+    ##job : List[User] = []
     name: str
-
-
+    
 class applyCreate(applyBase):
     role: str
+    mailid: str    
 
 
 class apply(applyBase):
     id: int
     owner_id: int
-
+    user_id: int
     class Config:
         orm_mode = True
-
-

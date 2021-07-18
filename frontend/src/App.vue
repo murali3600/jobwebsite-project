@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <img src="./assets/logo-design.jpg" style="padding: 20px 10px 10px 25px; width:150px;height:150px;">
-      <h2 style="color:#ebf5f9;padding:20px 0px 0px 25px">Murali Job Portal<br><br>Here You can find your perfect job</h2>
+      <h2 style="color:#ebf5f9;padding:20px 0px 0px 25px">BEST Job Portal<br><br>Here You can find your perfect job</h2>
     </div>
     <hr>
     <div class="kar">
