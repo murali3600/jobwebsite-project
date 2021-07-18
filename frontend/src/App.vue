@@ -20,12 +20,19 @@
 </template>
 
 <script>
+{
+//import vue from 'vue';
+//import vueAxios from 'vue-axios'
+//vue.use(Vueaxios.axios)
+//export default {
+//name:"joblist"
+  //mounted()
+  //{vue.axios.get('http://127.0.0.1:8000/docs#/default/read_jobs_jobs__get')
+  //.then(resp)=>{
+   // console.warn(resp)
+  //})
+  }
 
-export default {
-components :{
-  
-}
-}
 </script>
 
 <style>
